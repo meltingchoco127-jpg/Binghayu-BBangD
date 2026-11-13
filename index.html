@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ko">
 <head>
@@ -22,15 +23,15 @@
       <section class="intro">
         <p class="eyebrow">BINGHAYU BBANGD · INTERACTIVE GAME</p>
         <h1>빙하유 궁둥이 <em>두드리기!</em></h1>
-        <p></p>
+        <p>궁둥이를 클릭하거나 터치하면 둥근 외곽선까지 출렁이고, 두드릴 때마다 효과음이 납니다. 연타도 가능합니다.</p>
       </section>
 
       <section class="game-frame" aria-label="빙하유 궁둥이 두드리기 게임">
         <div class="game-scene" id="gameScene">
           <!-- WebGL을 지원하지 않는 브라우저에는 원본 이미지를 보여 줍니다. -->
           <img class="fallback-image" id="fallbackImage" src="./assets/composite_padded.png" alt="양손을 옆에 둔 동그란 검은색 옷의 캐릭터" />
-          <canvas id="gameCanvas" tabindex="0" role="button" aria-label="배를 클릭하거나 스페이스바를 누르면 물결이 생깁니다"></canvas>
-          <div class="scene-help" id="sceneHelp">👆 두드려라 궁둥이</div>
+          <canvas id="gameCanvas" tabindex="0" role="button" aria-label="궁둥이를 클릭하거나 스페이스바를 누르면 물결이 생깁니다"></canvas>
+          <div class="scene-help" id="sceneHelp">👆 궁둥이를 콕 눌러보세요</div>
           <div class="error-message" id="errorMessage" role="status" hidden></div>
         </div>
         <div class="scene-footer">
@@ -63,7 +64,7 @@
             <input id="volume" type="range" min="0" max="100" step="1" value="65"
                    aria-label="효과음 볼륨" />
             <div class="audio-control-footer">
-              <small>배를 때릴 때마다 효과음이 납니다</small>
+              <small>궁둥이를 때릴 때마다 효과음이 납니다</small>
               <button type="button" id="muteButton" class="mute-button" aria-pressed="false">
                 🔊 소리 켜짐
               </button>
@@ -73,7 +74,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">원본 이미지 보존  · WebGL2 실시간 렌더링</footer>
+    <footer class="site-footer">원본 이미지 보존 · 궁둥이 외곽까지 변형 · WebGL2 실시간 렌더링</footer>
   </div>
 </body>
 </html>
